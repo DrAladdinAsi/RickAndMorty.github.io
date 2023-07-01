@@ -1,0 +1,698 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+
+        
+}
+
+body {
+    position: relative;
+    width: 100%;
+}
+
+
+.navbar .web-name img {
+    display: inline-block;
+    width: 2rem;
+ 
+}
+.navbar .web-name h2 {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: orange;
+
+}
+
+.navbar .web-name h2:hover {
+  
+   color: rgb(30, 32, 139);
+   cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding-bottom: 1rem;
+    z-index: 10000;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin-right: 1rem;
+    background-color: whitesmoke;
+    border: 0.001rem wheat solid;
+    border-radius: 0.5rem;
+    
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color:orange;
+    font-size: 1.1rem;
+}
+
+.navbar ul li a:hover {
+    color: rgb(30, 32, 139);
+}
+
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    width: 100vw;
+    margin: 1rem 0.2rem;
+    background: url(images/rick6.jpg) no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1rem;
+}
+
+.btn {
+
+    border: 0.1px white solid;
+    border-radius: 1rem;
+    padding:0.3rem;
+    background-color: orange;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.main .title h1 {
+    color:rgb(230, 231, 233);
+    font-size: 2.5rem;
+}
+
+.main .main-text {
+    width: 37%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 14rem;    
+}
+
+.main .main-text .some-text {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    width: 45%;
+
+
+}
+
+.main .main-text .some-text p {
+    color: rgb(255, 255, 255);
+}
+
+.about {
+    margin: 2rem;
+    position: relative;
+    width: 100%;
+    height: 60%;  
+}
+
+.about .all-about {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .all-about .some-text {
+    width: 40%;
+    height: 12rem;
+    margin-left: 2rem;
+    
+    background-color: rgba(238, 122, 13, 0.2); 
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about .all-about .some-text h1 {
+    color: orange;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about .all-about .some-text p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about .all-about img {
+    width: 25rem;
+    border-radius: 1rem;
+    margin-right:5rem ;
+}
+
+.cast{
+    
+    position: relative;
+    width: 100%;
+    height: 60%;
+
+}
+
+.cast .title {
+     text-align: center;
+     position: relative;
+     margin: 2rem;
+     font-size: 2rem;
+
+}
+
+.cast .title .inside {
+    
+    font-size: 2rem;
+    color: orange;
+}
+
+.cast .container {
+    width: 100%;
+    height: 100%;
+}
+
+.cast .container .box {
+   width:20rem;
+   height: 23rem;
+   overflow: hidden;
+   position: relative;
+   border: 0.1 orange solid;
+   border-radius: 1rem;
+   margin: 1rem 0;
+
+   
+}
+
+.cast .container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.cast .container .box .info {
+    background-color: black;
+    position:absolute;
+    top: -1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.cast .container .box:hover .info {
+    top: 0;
+    transition-delay: 2s;
+}
+
+.cast .container .box .info h2 {
+    color: white;
+}
+
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  height: 90%;
+  background-color: orange;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.prev {
+    left: 0;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: orange;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+.contact {
+    position: relative;
+    margin-top: 6rem;
+}
+
+.contact .container {
+    position: relative;
+    width: 60%;
+    height: 20rem;
+
+    margin: 1rem auto;
+    padding: 1.3rem;
+    border: 1px orange solid;
+    border-radius: 1rem ;
+}
+
+.contact .container .title {
+  
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    border-bottom: 1px orange solid;
+    display: inline-block;
+    margin-left: 42%;
+}
+.contact .container .title h2 {
+    text-align: center; 
+     color: orange;
+}
+
+.contact .container .first-half {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.contact .container .first-half .item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right:0.5rem;
+}
+
+.contact .container .first-half .item input {
+    border-radius: 0.2rem;
+    outline: 0;
+    height: 1rem;
+   
+
+}
+.contact .container .first-half .item input:focus {
+     border: 1px orange solid;
+}
+
+.contact .container .second-half textarea:focus {
+    text-decoration: none;
+    border: 1px orange solid;
+}
+
+
+.contact .container .second-half .item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 1rem;
+    margin-right:0.5rem;
+  
+    margin-bottom: 1rem;
+}
+.contact .container .second-half .item textarea {
+    height: 6rem;
+}
+
+.contact .container .second-half .share li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+   
+}
+.contact .container .second-half .share li a {
+    text-decoration: none;
+    border: 0.1px black solid;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.contact .container .second-half .share li a:hover {
+    border: 0.1px rgb(253, 191, 77) solid;
+     cursor: pointer;
+     color: rgb(255, 166, 0);
+}
+
+
+
+.footer {
+    width: 100vw;
+    height: 6rem;
+    background-color: rgba(238, 122, 13, 0.2);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.footer .name {
+    text-align: center;
+}
+
+
+
+.toggle-button {
+    position:absolute;
+    
+    width:2rem ;
+    height: 1.6rem;
+    top: 0.7rem;
+    right:0.4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.toggle-button .bar {
+    border: 1px black solid;
+    padding: 0.1rem;
+    border-radius: 1rem;
+}
+
+
+.advanture {
+    background-size: 100vw;
+    height: 80vh;
+    
+    position: relative;
+    background: url(images/rick12.jpg) no-repeat;
+    background-position: center ;
+    background-size:cover;
+    margin: 1rem 0.2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    
+}
+
+
+.advanture .main-text {
+    position: absolute;
+     bottom: 0;
+    left: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    opacity: 0.9;
+    width: 25rem;
+    height: 15rem;
+    border-radius:  1rem; 
+  
+    margin: auto;
+    padding: 0.5rem;
+   
+}
+
+
+.advanture .main-text h1 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.advanture .main-text .some-text p {
+    color: white;
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+.advanture .main-text .btn {
+    color: white;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media (max-width: 1200px) {
+
+    .contact .container .title {
+     margin-left: 29%;
+     margin-bottom: 0.5rem;
+    }
+
+    .main .title h1 { 
+        font-size: 1.5rem;
+    }
+    .main {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .main .main-text {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.6); 
+        opacity: 0.9;
+        width: 20rem;
+        height: 15rem;
+        border-radius:  1rem; 
+      
+        margin: auto;
+       
+    }
+
+    .main .main-text h1 {
+        color: white;
+    }
+
+    .main .main-text .some-text p {
+        color: white;
+    }
+    .main .main-text .btn {
+        color: white;
+    }
+   
+    .main {
+      width: 100%;
+      margin: 2rem;
+    }
+
+    .about .all-about {
+     margin: 0;
+    }
+
+    
+
+    .about .all-about img {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 25%;
+        margin-right:0.3rem ;
+    }
+    .about .all-about .some-text {
+        width: 45%;
+        height: 16rem;
+        margin-left: 0;
+        background-color: rgba(238, 122, 13, 0.2); 
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+    .about .all-about .some-text h1 {
+        font-size: 1.3rem;
+    }
+    .about .all-about .some-text p {
+        font-size: 1rem;
+    } 
+
+    .cast .container .box {
+        width: 12rem;
+        height: 18rem;
+    }
+   
+    .cast .container .box .info h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact .container {
+        width: 70%;
+        height: 23rem;
+        overflow: hidden;
+    }
+    .contact .container .first-half {
+        flex-direction: column;
+    }
+    .contact .container .first-half .item {
+        margin-bottom: 1rem;
+    }
+
+    .contact .container .second-half .share ul {
+       text-align: center;
+       margin-top: 2rem;
+    }
+
+    .navbar .web-name h2 {
+        font-size: 1rem;
+    }
+
+    .navbar .web-name img {
+      width: 1.4rem;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .navbar ul li {
+        display: block;
+        width: 100vw;
+        height: 4rem;
+        
+        text-align: center;
+    
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar .list {
+        width: 100vw;
+        margin: 1rem;
+        background-color: whitesmoke;
+        border-radius: 1rem;
+        margin-top: -900px;
+      
+    }
+    .toggle-button {
+        display: flex;
+    }
+
+    .toggle-button:hover {
+        cursor: pointer;
+    }
+
+    .navbar .act {
+        margin-top: 1px;
+        
+    }
+
+    .advanture {
+    
+        background-size: cover;
+    }
+
+    .advanture .title h1 { 
+        font-size: 1.5rem;
+    }
+    .advanture {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .advanture .main-text {
+ 
+        left: 10%;
+        width: 22rem;
+        height: 13rem;
+        padding: 0.5rem;
+       
+    }
+
+  
+    .advanture .main-text .some-text p {
+        margin-bottom: 0.4rem;
+    }
+ 
+   
+ 
+}
