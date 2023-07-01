@@ -813,5 +813,10 @@ img {vertical-align: middle;}
         font-size: 0.6rem;
         cursor: pointer;
     }
+
+       .cast .container .box .info h2 {
+        font-size: 1rem;
+    }
+    
     
 }
