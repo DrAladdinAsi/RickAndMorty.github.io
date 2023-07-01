@@ -696,3 +696,72 @@ img {vertical-align: middle;}
    
  
 }
+
+
+@media (max-width:400px) {
+
+    .about .all-about img {
+        width: 10rem;
+        height: 13rem;
+        border-radius: 25%;
+        margin-right:0.3rem ;
+    }
+    .about .all-about .some-text {
+        width: 50%;
+        height: 18rem;
+        margin-left: 0;
+        background-color: rgba(238, 122, 13, 0.2); 
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+    .about .all-about .some-text h1 {
+        font-size: 1.3rem;
+    }
+    .about .all-about .some-text p {
+        font-size: 1rem;
+    } 
+
+
+    .cast .container .box {
+        width: 10rem;
+        height: 18rem;
+    }
+
+
+    .main .main-text {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.6); 
+        opacity: 0.9;
+        width: 20rem;
+        height: 15rem;
+        border-radius:  1rem; 
+      
+        margin: auto;
+       
+    }
+
+    .main .main-text h1 {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .main .main-text .some-text p {
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    .advanture .main-text {
+ 
+        left: 6%;
+        width: 18rem;
+        height: 13rem;
+        padding: 0.5rem;
+       
+    }
+    
+}
